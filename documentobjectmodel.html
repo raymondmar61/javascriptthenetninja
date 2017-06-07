@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Net Ninja 32 What is the DOM in JavaScript, 33 Traversing the DOM, 34 Changing Page Content, 35 Changing Element Attributes, 36 Changing CSS Styles, 37 Adding Elements to the DOM, 38 Removing Elements from the DOM</title>
+</head>
+<body class="bodyclass">
+<p> Pretend here is the entire documentobjectmodel.html file.</p>
+</body>
+<body class="bodyclassall">
+<p>The Document Object Model (DOM) is an application programming interface which means use the DOM when we interact with webpages:  add content to the HTML document, delete content from the HTML document, change content on a HTML document. The Document itself is the HTML document web page.</p>
+
+<p>Every HTML element in the document is an object.  For example, head, body, ul, p are objects.</p>
+
+<p>The model starts with the hierarchy top going down.  HTML at top.  Head and Body are below HTML.  Title is below Head.  ul is below Body.  li is below ul.  Div is below Body.  p is below Body.  Everthing we can change in the document is a node:  elements, text within elements, HTML attributes</p>
+
+<table border="1">
+	<tr>
+		<td colspan="2"><center>HTML</center></td>
+	</tr>
+	<tr>
+		<td>Head</td>
+		<td><center>Body</center></td>
+	</tr>
+	<tr>
+		<td>Title</td>
+		<td>ul and DIV, h1, p</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>li and p (below DIV)</td>
+	</tr>
+</table>
+
+<p>What can we do with the DOM?  Examples are change the h1 text node at the top of the page, change the background color of an element node, animate the logo node from left to right, and expand the height of an element node when you click on it.</p>
+
+<p>The DOM can reach in at any node.  Once we have that node, we can traverse the DOM to access other nodes.</p>
+
+<div class="content">
+	<h2 id="page-title">Kung Fu Your Net Skills!</h2>
+	<h2 id="page">Content Page</h2>
+</div>
+
+<links id = "ulli">
+<ul>
+	<li><a href="/Subjects" id="test" class="ninjas">Subjects</a></li>
+	<li><a href="/Predicates" id="deletethislink" class="ninjas">Predicates</a></li>
+
+</ul>
+</links>
+
+<script type="text/javascript" src="documentobjectmodel.js"></script>
+</body>
+</html>
